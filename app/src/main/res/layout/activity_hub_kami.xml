@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    tools:context=".Info">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:weightSum="6">
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="30dp">
+
+         <ImageView
+             android:id="@+id/img_app"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="10dp"
+             android:src="@drawable/kantorbps"
+             tools:ignore="ImageContrastCheck"
+             android:contentDescription="TODO" />
+
+      </RelativeLayout>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="30dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginBottom="10dp"
+          android:elevation="20dp"
+          app:cardBackgroundColor="#99FFFFFF"
+          app:cardCornerRadius="10dp">
+
+         <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logobps"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logobps"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/hub_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logobps"
+                android:text="BADAN PUSAT STATISTIK \n KABUPATEN NGANJUK"
+                android:textAlignment="center"
+                android:textColor="#1E88E5"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jl_bps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hub_title"
+                android:layout_marginTop="10dp"
+                android:text="Jl. Dermojoyo 34A, Payaman, Nganjuk"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/utama_bps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jl_bps"
+                android:text="Telp/Fax : (0358) 321583\nEmail : bps3518@bps.go.id"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/layanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Layanan Pengaduan :"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_below="@id/utama_bps"/>
+            <TextView
+                android:id="@+id/telp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call 0813-3573-3207 \nemail : perpustakaan3518@bps.go.id"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/layanan"/>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_below="@id/telp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="Media Sosial"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+               <ImageView
+                   android:id="@+id/fblink"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="8dp"
+                   android:src="@drawable/icfacebook" />
+
+               <ImageView
+                   android:id="@+id/iglink"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="8dp"
+                   android:src="@drawable/icinstagram" />
+
+               <ImageView
+                   android:id="@+id/ytlink"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="8dp"
+                   android:src="@drawable/icyoutube" />
+
+               <ImageView
+                   android:id="@+id/weblink"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:src="@drawable/icweb" />
+            </LinearLayout>
+            </RelativeLayout>
+         </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="end"
+          android:layout_marginTop="20dp">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="end"
+             android:text="Copyright ©2022\n Badan Pusat Statistik Kabupaten Nganjuk"
+             android:textAlignment="center"
+             android:textColor="@color/black" />
+      </RelativeLayout>
+
+   </LinearLayout>
+
+</RelativeLayout>
